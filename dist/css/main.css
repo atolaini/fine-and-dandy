@@ -1,2 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: red; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-family: "Open Sans";
+  color: #4D4D4D; }
+
+.mainHeading {
+  font-family: "Alegreya";
+  font-size: 4rem;
+  color: #3B3B3B; }
+
+.siteHeader {
+  height: 60rem;
+  width: 100%;
+  background-color: coral;
+  position: relative; }
+  .siteHeader__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .siteHeader__logo--img {
+      color: transparent;
+      height: 38.4rem;
+      max-width: 52.4rem;
+      background-image: url("/dist/images/logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }

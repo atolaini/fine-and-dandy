@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-family: $primaryFont;
+    color: $grey;
+}
+
+.mainHeading {
+    font-family: $primaryHeading;
+    font-size: 4rem;
+    color: $black;
+}

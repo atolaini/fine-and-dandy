@@ -1,0 +1,21 @@
+.siteHeader {
+    height: 60rem;
+    width: 100%;
+    background-color: coral;
+    position: relative;
+
+    &__logo {
+        //background-color: blue;
+        @include abs-center;
+        
+        &--img {
+            color: transparent;
+            height: 38.4rem;
+            max-width: 52.4rem;
+            background-image: url('/dist/images/logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
