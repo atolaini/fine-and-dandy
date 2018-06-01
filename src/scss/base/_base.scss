@@ -13,7 +13,8 @@ html {
 body {
     box-sizing: border-box;
     font-size: 1.7rem;
-    line-height: 1.5;
+    line-height: 1.7;
+    letter-spacing: .7px;
     font-family: $primaryFont;
     color: $grey;
 }
@@ -22,10 +23,10 @@ body {
     width: 100%;
     max-width: 160rem;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 
-.Heading {
+.heading {
     font-family: $primaryHeading;
     font-size: 4rem;
     color: $black;

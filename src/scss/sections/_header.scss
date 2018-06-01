@@ -1,5 +1,4 @@
 .siteHeader {
-    background-color: red;
     height: 60rem;
     width: 100%;
     background-image: url('/dist/images/headerBg.png');
@@ -9,6 +8,7 @@
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+
 
     &__logo {
         // position: absolute;

@@ -13,7 +13,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.7rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  letter-spacing: .7px;
   font-family: "Open Sans";
   color: #4D4D4D; }
 
@@ -21,9 +22,9 @@ body {
   width: 100%;
   max-width: 160rem;
   margin: auto;
-  padding: 0 1rem; }
+  padding: 0 3rem; }
 
-.Heading {
+.heading {
   font-family: "Alegreya";
   font-size: 4rem;
   color: #3B3B3B; }
@@ -34,7 +35,6 @@ a:visited {
   text-decoration: none; }
 
 .siteHeader {
-  background-color: red;
   height: 60rem;
   width: 100%;
   background-image: url("/dist/images/headerBg.png");
@@ -80,3 +80,40 @@ a:visited {
   height: 2rem;
   margin-left: 1rem;
   margin-top: 1.5rem; }
+
+.welcome {
+  height: 60rem;
+  position: relative;
+  overflow: hidden; }
+  .welcome__image {
+    background-image: url("/dist/images/welcomeImg.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 76rem;
+    width: 96rem;
+    position: absolute;
+    right: 50%;
+    margin-right: -30rem;
+    top: 5rem; }
+  .welcome__text {
+    position: absolute;
+    left: 50%;
+    margin-left: -5rem;
+    top: 13.9rem; }
+    .welcome__text--txt {
+      margin-top: 3.9rem; }
+  .welcome__divLine {
+    margin-top: 1.5rem; }
+
+.arrow {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
+  top: 116rem; }
+
+.test {
+  background-color: cadetblue; }

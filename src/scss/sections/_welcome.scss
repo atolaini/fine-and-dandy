@@ -1,0 +1,48 @@
+.welcome {
+    height: 60rem;
+    position: relative;
+    overflow: hidden;
+
+    &__image {
+        background-image: url('/dist/images/welcomeImg.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 76rem;
+        width: 96rem;
+        position: absolute;
+        right: 50%;
+        margin-right: -30rem;
+        top: 5rem;
+    }
+
+
+    &__text {
+        position: absolute;
+        left: 50%;
+        margin-left: -5rem;
+        top: 13.9rem;
+
+        &--txt {
+            margin-top: 3.9rem;
+        }
+    }
+
+    &__divLine {
+        margin-top: 1.5rem;
+    }
+
+}
+
+.arrow {
+    width: 7rem;
+    height: 7rem;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    top: 116rem;
+}
+
+.test {
+    background-color: cadetblue;
+}
