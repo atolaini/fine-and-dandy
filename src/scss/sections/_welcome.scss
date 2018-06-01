@@ -26,13 +26,15 @@
     }
 
     &__image {
+        position: relative;
         height: 70rem;
         width: 50rem;
-        background-image: url('/dist/images/welcomeImg.png');
+        background-image: url('/dist/images/welcomeImg.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right;
         margin-top: 3rem;
+        z-index: 100;
     }
 }
 

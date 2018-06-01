@@ -1,5 +1,5 @@
 //Header parallax
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
     let wScroll = this.pageYOffset;
     let logo = document.querySelector('.siteHeader__logo');
 

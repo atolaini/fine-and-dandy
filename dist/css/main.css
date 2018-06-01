@@ -35,7 +35,6 @@ a:visited {
   text-decoration: none; }
 
 .siteHeader {
-  background-color: red;
   height: 60rem;
   width: 100%;
   background-image: url("/dist/images/headerBg.png");
@@ -104,13 +103,15 @@ a:visited {
     .welcome__text--txt {
       margin-top: 3.9rem; }
   .welcome__image {
+    position: relative;
     height: 70rem;
     width: 50rem;
-    background-image: url("/dist/images/welcomeImg.png");
+    background-image: url("/dist/images/welcomeImg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    z-index: 100; }
 
 .arrow {
   width: 7rem;
