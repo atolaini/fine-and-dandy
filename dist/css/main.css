@@ -14,6 +14,7 @@ body {
           box-sizing: border-box;
   font-size: 1.7rem;
   line-height: 1.5;
+  letter-spacing: .7px;
   font-family: "Open Sans";
   color: #4D4D4D; }
 
@@ -23,7 +24,7 @@ body {
   margin: auto;
   padding: 0 1rem; }
 
-.Heading {
+.heading {
   font-family: "Alegreya";
   font-size: 4rem;
   color: #3B3B3B; }
@@ -80,3 +81,46 @@ a:visited {
   height: 2rem;
   margin-left: 1rem;
   margin-top: 1.5rem; }
+
+.welcome {
+  height: 60rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .welcome__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .welcome__divLine {
+    border-color: rgba(151, 151, 151, 0.2);
+    margin-top: 1.6rem; }
+  .welcome__text {
+    width: 60%;
+    padding: 3rem;
+    margin-top: 13.9rem; }
+    .welcome__text--txt {
+      margin-top: 3.9rem; }
+  .welcome__image {
+    height: 70rem;
+    width: 50rem;
+    background-image: url("/dist/images/welcomeImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 3rem; }
+
+.arrow {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
+  top: 116rem; }
+
+.test {
+  background-color: cadetblue; }
