@@ -13,7 +13,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.7rem;
-  line-height: 1.5;
+  line-height: 1.7;
   letter-spacing: .7px;
   font-family: "Open Sans";
   color: #4D4D4D; }
@@ -22,7 +22,7 @@ body {
   width: 100%;
   max-width: 160rem;
   margin: auto;
-  padding: 0 1rem; }
+  padding: 0 3rem; }
 
 .heading {
   font-family: "Alegreya";
@@ -83,35 +83,27 @@ a:visited {
 
 .welcome {
   height: 60rem;
-  width: 100%;
   position: relative;
   overflow: hidden; }
-  .welcome__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .welcome__divLine {
-    border-color: rgba(151, 151, 151, 0.2);
-    margin-top: 1.6rem; }
-  .welcome__text {
-    width: 60%;
-    padding: 3rem;
-    margin-top: 13.9rem; }
-    .welcome__text--txt {
-      margin-top: 3.9rem; }
   .welcome__image {
-    position: relative;
-    height: 70rem;
-    width: 50rem;
     background-image: url("/dist/images/welcomeImg.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 3rem;
-    z-index: 100; }
+    background-position: left;
+    height: 76rem;
+    width: 96rem;
+    position: absolute;
+    right: 50%;
+    margin-right: -30rem;
+    top: 5rem; }
+  .welcome__text {
+    position: absolute;
+    left: 50%;
+    margin-left: -5rem;
+    top: 13.9rem; }
+    .welcome__text--txt {
+      margin-top: 3.9rem; }
+  .welcome__divLine {
+    margin-top: 1.5rem; }
 
 .arrow {
   width: 7rem;
