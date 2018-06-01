@@ -18,8 +18,21 @@ body {
     color: $grey;
 }
 
-.mainHeading {
+.container {
+    width: 100%;
+    max-width: 160rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.Heading {
     font-family: $primaryHeading;
     font-size: 4rem;
     color: $black;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
 }

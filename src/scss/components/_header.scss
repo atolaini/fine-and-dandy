@@ -1,21 +1,60 @@
 .siteHeader {
+    background-color: red;
     height: 60rem;
     width: 100%;
-    background-color: coral;
+    background-image: url('/dist/images/headerBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 
     &__logo {
-        //background-color: blue;
-        @include abs-center;
+        // position: absolute;
+        // left: 50%;
+        // margin-left: -25rem;
+        // top: 50%;
+        // margin-top: -18rem;
+        padding: 0 1rem;
+        margin-top: 5rem;
+
         
         &--img {
             color: transparent;
             height: 38.4rem;
-            max-width: 52.4rem;
+            max-width: 100%;
             background-image: url('/dist/images/logo.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+            text-align: center;
         }
     }
+
+    &__contactInfo {
+        background-color: $black;
+        height: 5rem;
+        opacity: .6;
+
+        &--contents {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+        }
+
+        &--email:link,
+        &--emai:visited {
+            color: $white;
+        }
+    }
+}
+
+.facebookIcon, .instagramIcon {
+    fill: $white;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
 }

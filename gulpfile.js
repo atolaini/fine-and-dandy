@@ -8,13 +8,13 @@ const imagemin = require('gulp-imagemin');
 
 //Copy HTML
 gulp.task('copyHtml', () => {
-    return gulp.src('src/*.html')
+    gulp.src('src/*.html')
         .pipe(gulp.dest('dist'))
 });
 
 //Compile SASS and prefix CSS
 gulp.task('sass', () => {
-    return gulp.src(['src/scss/**/*.scss'], ['sass'])
+    gulp.src(['src/scss/**/*.scss'], ['sass'])
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 2 versions'))
         .pipe(gulp.dest('dist/css'))
@@ -22,7 +22,7 @@ gulp.task('sass', () => {
 
 //Image Minify
 gulp.task('minify', () => {
-    return gulp.src('src/images/*')
+    gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
 });
