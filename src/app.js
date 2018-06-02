@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => {
     let welcomeImg = document.querySelector('.welcome__image');
 
     if(wScroll > welcome.offsetTop - (window.innerHeight / 2)) {
-        welcomeImg.style.transform = 'translate(0,' + wScroll / -30 + '%)';
+        welcomeImg.style.transform = 'translate(0,' + wScroll / -57 + '%)';
     }
+
 });
