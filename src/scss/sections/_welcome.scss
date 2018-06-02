@@ -2,6 +2,7 @@
     height: 60rem;
     position: relative;
     overflow: hidden;
+    box-shadow: 1px -10px 40px transparentize($color: $black, $amount: .1);
 
     &__image {
         background-image: url('/dist/images/welcomeImg.svg');
@@ -42,6 +43,7 @@
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     top: 116rem;
+    box-shadow: 10px 10px 25px -15px transparentize($color: $black, $amount: .1)
 }
 
 .test {

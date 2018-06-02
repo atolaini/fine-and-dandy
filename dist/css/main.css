@@ -83,7 +83,8 @@ a:visited {
   top: 0px;
   left: 0px; }
   .closeBtn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #979797; }
 
 .siteHeader {
   height: 60rem;
@@ -135,7 +136,9 @@ a:visited {
 .welcome {
   height: 60rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-box-shadow: 1px -10px 40px rgba(59, 59, 59, 0.9);
+          box-shadow: 1px -10px 40px rgba(59, 59, 59, 0.9); }
   .welcome__image {
     background-image: url("/dist/images/welcomeImg.svg");
     background-repeat: no-repeat;
@@ -165,7 +168,9 @@ a:visited {
   left: 50%;
   -webkit-transform: translate(-50%) rotate(45deg);
           transform: translate(-50%) rotate(45deg);
-  top: 116rem; }
+  top: 116rem;
+  -webkit-box-shadow: 10px 10px 25px -15px rgba(59, 59, 59, 0.9);
+          box-shadow: 10px 10px 25px -15px rgba(59, 59, 59, 0.9); }
 
 .test {
   background-color: cadetblue; }

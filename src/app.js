@@ -25,8 +25,9 @@ let closeBtn = document.querySelector('.closeBtn');
 let current = document.querySelector('.current');
 let next = document.querySelector('.nextBtn');
 let prev = document.querySelector('.prevBtn');
+let currentImg = 0;
 
-console.log(myImages);
+console.log(modal);
 
 //OPEN MODAL ON IMAGE CLICK
 myImages.forEach(img => {
@@ -41,6 +42,8 @@ closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 })
 
-
+modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+})
 
 
