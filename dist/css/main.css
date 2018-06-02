@@ -142,13 +142,13 @@ a:visited {
   .welcome__image {
     background-image: url("/dist/images/welcomeImg.svg");
     background-repeat: no-repeat;
-    background-position: left 0px;
+    background-position: left 0;
     height: 76rem;
     width: 96rem;
     position: absolute;
     right: 50%;
     margin-right: -30rem;
-    top: 5rem; }
+    top: 25rem; }
   .welcome__text {
     position: absolute;
     left: 50%;
@@ -177,19 +177,14 @@ a:visited {
 
 .gallery {
   height: 80rem;
-  width: 100%;
-  background-color: #E5CDB4;
-  display: grid;
-  grid-template-rows: 100vw -webkit-min-content;
-  grid-template-rows: 100vw min-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  max-width: 100%;
+  background-color: #E5CDB4; }
   .gallery__container {
     width: 100%;
-    max-width: 96rem; }
+    max-width: 96rem;
+    margin: auto; }
   .gallery__heading {
-    margin-top: 10rem;
+    padding-top: 10rem;
     text-align: center; }
   .gallery__divider {
     margin-top: 1.5rem;
@@ -220,3 +215,56 @@ a:visited {
               transform: scale(1.1); }
   .gallery__item {
     overflow: hidden; }
+
+.flavours {
+  width: 100%;
+  height: 108rem;
+  background-image: url("/dist/images/flavourBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .flavours__heading {
+    padding-top: 10rem;
+    color: #FBF3F3;
+    text-align: center; }
+  .flavours__divLine {
+    border: 0.5px solid #FBF3F3; }
+  .flavours__card {
+    border: 2px solid white;
+    width: 35rem;
+    height: 9rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .flavours__card:hover {
+      height: auto; }
+    .flavours__card--description {
+      width: 35rem;
+      padding: 2rem;
+      font-size: 1.7rem;
+      text-align: center;
+      color: #FBF3F3; }
+    .flavours__card--heading {
+      margin-top: 1.8rem;
+      font-family: "Alegreya";
+      color: #FBF3F3;
+      font-size: 3rem;
+      font-weight: lighter; }
+
+.flavourCard__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }

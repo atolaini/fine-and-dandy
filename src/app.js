@@ -11,9 +11,10 @@ window.addEventListener('scroll', () => {
     let welcome = document.querySelector('.welcome');
     let welcomeImg = document.querySelector('.welcome__image');
 
-    if(wScroll > welcome.offsetTop - (window.innerHeight / 2)) {
-        welcomeImg.style.transform = 'translate(0,' + wScroll / -57 + '%)';
+    if(wScroll > welcome.offsetTop - (window.innerHeight / 1)) {
+        welcomeImg.style.transform = 'translate(0px,' + wScroll / -20 + '%)';
     }
+    
 });
 
 
@@ -26,8 +27,6 @@ let current = document.querySelector('.current');
 let next = document.querySelector('.nextBtn');
 let prev = document.querySelector('.prevBtn');
 let currentImg = 0;
-
-console.log(modal);
 
 //OPEN MODAL ON IMAGE CLICK
 myImages.forEach(img => {
@@ -45,5 +44,9 @@ closeBtn.addEventListener('click', () => {
 modal.addEventListener('click', () => {
     modal.style.display = 'none';
 })
+
+
+
+
 
 

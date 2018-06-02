@@ -1,18 +1,19 @@
 .gallery {
     height: 80rem;
-    width: 100%;
+    max-width: 100%;
     background-color: $lightPink;
-    display: grid;
-    grid-template-rows: 100vw min-content;
-    justify-content: center;
+    // display: grid;
+    // grid-template-rows: 100vw min-content;
+    // justify-content: center;
 
     &__container {
         width: 100%;
         max-width: 96rem;
+        margin: auto;
     }
 
     &__heading {
-        margin-top: 10rem;
+        padding-top: 10rem;
         text-align: center;
     }
 

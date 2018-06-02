@@ -1,0 +1,59 @@
+.flavours {
+    width: 100%;
+    height: 108rem;
+    background-image: url('/dist/images/flavourBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__heading {
+        padding-top: 10rem;
+        color: $white;
+        text-align: center;
+    }
+
+    &__divLine {
+        border: .5px solid $white;
+
+    }
+
+    &__card {
+        border: 2px solid white;
+        width: 35rem;
+        height: 9rem;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            height: auto;
+        }
+
+        &--description {
+            width: 35rem;
+            padding: 2rem;
+            font-size: 1.7rem;    
+            text-align: center;
+            color: $white;
+        }
+
+        &--heading {
+            margin-top: 1.8rem;
+            font-family: $primaryHeading;
+            color: $white;
+            font-size: 3rem;
+            font-weight: lighter;
+        }
+    }
+}
+
+.flavourCard__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
