@@ -39,6 +39,52 @@ a:visited {
   border: 0.5px solid #979797;
   margin: auto; }
 
+.galleryModal {
+  background-color: rgba(59, 59, 59, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 200; }
+  .galleryModal__imgContainer {
+    margin: auto;
+    height: 60rem;
+    max-width: 60rem;
+    margin-top: 3rem;
+    position: relative;
+    padding: 2rem; }
+  .galleryModal__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%; }
+  .galleryModal__controls {
+    text-align: center;
+    padding-bottom: 2rem; }
+
+.prevBtn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.modalBtn {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  fill: #FBF3F3; }
+
+.closeBtn {
+  color: white;
+  font-size: 3rem;
+  padding-left: 3rem;
+  margin-top: 2rem;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  .closeBtn:hover {
+    cursor: pointer; }
+
 .siteHeader {
   height: 60rem;
   width: 100%;
@@ -104,7 +150,8 @@ a:visited {
     position: absolute;
     left: 50%;
     margin-left: -5rem;
-    top: 13.9rem; }
+    top: 13.9rem;
+    z-index: 100; }
     .welcome__text--txt {
       margin-top: 3.9rem; }
   .welcome__divLine {
@@ -124,7 +171,7 @@ a:visited {
   background-color: cadetblue; }
 
 .gallery {
-  height: 119.7rem;
+  height: 80rem;
   width: 100%;
   background-color: #E5CDB4;
   display: grid;
@@ -133,6 +180,9 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .gallery__container {
+    width: 100%;
+    max-width: 96rem; }
   .gallery__heading {
     margin-top: 10rem;
     text-align: center; }
@@ -142,11 +192,14 @@ a:visited {
   .gallery__grid {
     grid-column: full-start / full-end;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 40vh);
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vh);
     grid-gap: 2rem;
     padding: 2rem;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .gallery__img {
     width: 100%;
     height: 100%;

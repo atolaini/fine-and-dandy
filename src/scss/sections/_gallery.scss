@@ -1,10 +1,15 @@
 .gallery {
-    height: 119.7rem;
+    height: 80rem;
     width: 100%;
     background-color: $lightPink;
     display: grid;
     grid-template-rows: 100vw min-content;
     justify-content: center;
+
+    &__container {
+        width: 100%;
+        max-width: 96rem;
+    }
 
     &__heading {
         margin-top: 10rem;
@@ -19,11 +24,12 @@
     &__grid {
         grid-column: full-start / full-end;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 40vh);
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vh);
         grid-gap: 2rem;
         padding: 2rem;
         margin: 2rem auto;
+        justify-content: center;
     }
 
     &__img {
