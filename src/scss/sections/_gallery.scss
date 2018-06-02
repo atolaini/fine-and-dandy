@@ -6,6 +6,16 @@
     grid-template-rows: 100vw min-content;
     justify-content: center;
 
+    &__heading {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    &__divider {
+        margin-top: 1.5rem;
+        margin: auto;
+    }
+
     &__grid {
         grid-column: full-start / full-end;
         display: grid;
@@ -13,6 +23,7 @@
         grid-template-rows: repeat(3, 40vh);
         grid-gap: 2rem;
         padding: 2rem;
+        margin: 2rem auto;
     }
 
     &__img {
@@ -20,10 +31,15 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        } 
     }
 
     &__item {
-
-
+        overflow: hidden;
     }
 }

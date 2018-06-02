@@ -37,3 +37,9 @@ a:active,
 a:visited {
     text-decoration: none;
 }
+
+.divLine {
+    width: 40rem;
+    border: .5px solid $lightGrey;
+    margin: auto;
+}

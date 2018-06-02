@@ -34,6 +34,11 @@ a:active,
 a:visited {
   text-decoration: none; }
 
+.divLine {
+  width: 40rem;
+  border: 0.5px solid #979797;
+  margin: auto; }
+
 .siteHeader {
   height: 60rem;
   width: 100%;
@@ -128,16 +133,32 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .gallery__heading {
+    margin-top: 10rem;
+    text-align: center; }
+  .gallery__divider {
+    margin-top: 1.5rem;
+    margin: auto; }
   .gallery__grid {
     grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 40vh);
     grid-gap: 2rem;
-    padding: 2rem; }
+    padding: 2rem;
+    margin: 2rem auto; }
   .gallery__img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    display: block; }
+    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+    .gallery__img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  .gallery__item {
+    overflow: hidden; }
