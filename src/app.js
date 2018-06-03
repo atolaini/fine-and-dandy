@@ -26,13 +26,16 @@ let closeBtn = document.querySelector('.closeBtn');
 let current = document.querySelector('.current');
 let next = document.querySelector('.nextBtn');
 let prev = document.querySelector('.prevBtn');
-let currentImg = 0;
+let newSrc = [];
+
+
 
 //OPEN MODAL ON IMAGE CLICK
 myImages.forEach(img => {
     img.addEventListener('click', (e) => {
         modal.style.display = 'block';
         current.src = e.target.src;
+        console.log(current.src)
     })
 })
 
@@ -41,12 +44,14 @@ closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 })
 
-modal.addEventListener('click', () => {
-    modal.style.display = 'none';
-})
+//SLIDER FUNCTIONALITY  
+let currentSlide = 0;
 
+nextSlide = () => {
 
+}
 
+nextSlide()
 
 
 
