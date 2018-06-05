@@ -1,5 +1,19 @@
 .testimonials {
     width: 100%;
-    height: 86.4rem;
+    height: 75rem;
     background-image: url('/dist/images/testimonialBg.png');
+
+    &__heading {
+        padding-top: 20rem;
+        text-align: center;
+        color: $white;
+    }
+
+    &__divider {
+        border: .5px solid $white;
+    }
+
+    &__cardsWrap {
+        margin-top: 5rem;
+    }
 }

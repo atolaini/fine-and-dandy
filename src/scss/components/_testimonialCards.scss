@@ -35,7 +35,7 @@
         content: "\201c";
         position: absolute;
         top: -13rem;
-        left: 14rem;
+        left: 2rem;
         font-size: 30rem;
         color: transparentize($color: $lightGrey, $amount: 0.3rem);
         font-family: sans-serif;
@@ -43,16 +43,3 @@
     }
 }
 
-.testimonials__cardsWrap {
-    background-color: coral;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-
-    &--ul {
-        display: flex;
-        left: -100%;
-        position: relative;
-        transform: translateX(100%);
-    }
-}

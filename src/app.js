@@ -44,6 +44,18 @@ closeBtn.addEventListener('click', () => {
 
 
 //TESTIMONIALS SLIDER
-
+$(document).ready(function(){
+    $('.testimonials__cardsWrap').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        centerMode: true,
+        centerPadding: '60px',
+        autoplay: true
+    });
+  });
 
 
