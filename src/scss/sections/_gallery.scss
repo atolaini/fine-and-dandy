@@ -2,9 +2,7 @@
     height: 80rem;
     max-width: 100%;
     background-color: $lightPink;
-    // display: grid;
-    // grid-template-rows: 100vw min-content;
-    // justify-content: center;
+    padding-bottom: 90rem;
 
     &__container {
         width: 100%;
@@ -29,7 +27,7 @@
         grid-template-rows: repeat(3, 20vh);
         grid-gap: 2rem;
         padding: 2rem;
-        margin: 2rem auto;
+        margin: 7rem auto;
         justify-content: center;
     }
 

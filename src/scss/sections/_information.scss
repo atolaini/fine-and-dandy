@@ -1,0 +1,57 @@
+.information {
+    position: relative;
+    min-height: 100rem;
+    box-shadow: 1px -10px 40px transparentize($color: $black, $amount: .1);
+
+    
+    &::after {
+        content: '';
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        background-color: white;
+        left: 50%;
+        margin-left: -2.5rem;
+        top: 96.5rem;
+        transform: rotate(45deg);
+        box-shadow: 10px 10px 25px -15px transparentize($color: $black, $amount: .1)
+
+    }
+
+    &__heading {
+        text-align: center;
+        padding-top: 3.8rem;
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 6rem;
+        padding-bottom: 6rem;
+        word-wrap: none;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    &__prices {
+        border-right: 1px solid $lightGrey;
+        padding-right: 2rem;
+
+        &--heading {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__delivery {
+        padding-left: 2rem;
+
+        &--heading {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+}
