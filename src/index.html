@@ -14,11 +14,53 @@
 </head>
 <body>
 
+    <!-- NAVIGATION -->
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__btn">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav" id="mobNav">
+            <ul class="navigation__list">
+                <li class="navigation__list--item">
+                    <a href="#one" class="navigation__list--link">Home</a>
+                </li>
+                <li class="navigation__list--item">
+                    <a href="#two" class="navigation__list--link">Welcome</a>
+                </li>
+                <li class="navigation__list--item">
+                    <a href="#three" class="navigation__list--link">Gallery</a>
+                </li>
+                <li class="navigation__list--item">
+                    <a href="#four" class="navigation__list--link">Flavours</a>
+                </li>
+                <li class="navigation__list--item">
+                        <a href="#five" class="navigation__list--link">Info</a>
+                    </li>
+                <li class="navigation__list--item">
+                    <a href="#six" class="navigation__list--link">Testimonials</a>
+                </li>
+                <li class="navigation__list--item">
+                    <a href="#seven" class="navigation__list--link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+        </div>
+    
+
     <!-- HEADER -->
 
     <header class="siteHeader">
 
-        <section class="siteHeader__contactInfo">
+        <section class="siteHeader__contactInfo" id="one">
             <div class="container">
                 <section class="siteHeader__contactInfo--contents">
                     <a href="mailto:nicola@fineanddandycakes.com" class="siteHeader__contactInfo--email">
@@ -48,7 +90,7 @@
 
      <!-- WELCOME SECTION -->
 
-        <section class="welcome">
+        <section class="welcome" id="two">
 
             <div class="container welcome__content">
 
@@ -75,7 +117,7 @@
 
         <!-- GALLERY -->
 
-        <section class="gallery">
+        <section class="gallery" id="three">
 
             <div class="cotainer">
                 <h2 class="heading gallery__heading">
@@ -142,7 +184,7 @@
         </div>
 
         <!-- FLAVOURS -->
-        <section class="flavours">
+        <section class="flavours" id="four">
 
            <div class="container">
 
@@ -241,7 +283,7 @@
 
         <!-- INFORMATION -->
         
-        <section class="information">
+        <section class="information" id="five">
             <h2 class="heading information__heading">
                 Information
             </h2>
@@ -309,7 +351,7 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="testimonials">
+        <section class="testimonials" id="six">
 
             <h2 class="heading testimonials__heading">
                 Happy Eaters
@@ -371,7 +413,7 @@
         </section>
 
         <!-- CONTACT -->
-        <section class="contact">
+        <section class="contact" id="seven">
             <h2 class="heading contact__heading">
                 Contact me
             </h2>
@@ -450,8 +492,12 @@
         
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <script src="/src/app.js"></script>
+
 </body>
 </html>
