@@ -3,6 +3,19 @@
     max-width: 100%;
     background-color: $lightPink;
     padding-bottom: 90rem;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -2.5rem;
+        background-color: white;
+        transform: rotate(45deg);
+        top: -4rem;
+    }
 
     &__container {
         width: 100%;
