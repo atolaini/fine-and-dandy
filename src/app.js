@@ -28,8 +28,6 @@ let next = document.querySelector('.nextBtn');
 let prev = document.querySelector('.prevBtn');
 let newSrc = [];
 
-
-
 //OPEN MODAL ON IMAGE CLICK
 myImages.forEach(img => {
     img.addEventListener('click', (e) => {
@@ -45,13 +43,6 @@ closeBtn.addEventListener('click', () => {
 })
 
 //SLIDER FUNCTIONALITY  
-let currentSlide = 0;
-
-nextSlide = () => {
-
-}
-
-nextSlide()
 
 
 

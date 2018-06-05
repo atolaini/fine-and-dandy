@@ -1,11 +1,12 @@
 .flavours {
+    position: relative;
     width: 100%;
-    height: 108rem;
+    height: auto;
     background-image: url('/dist/images/flavourBg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    
     &__heading {
         padding-top: 10rem;
         color: $white;
@@ -51,6 +52,24 @@
             font-weight: lighter;
         }
     }
+
+    &__allergyTitle {
+        text-align: center;
+        color: $white;
+        margin-top: 7.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__allergyInfo {
+        max-width: 70rem;
+        margin: auto;       
+
+        &--txt {
+            text-align: center;
+            color: $white;
+            padding-bottom: 7rem;
+        }
+    }
 }
 
 .flavoursText__container {
@@ -61,11 +80,6 @@
 }
 
 .flavourCard__container {
-//     grid-column: center-start / center-end;
-//     display: grid;
-//     grid-template-columns: repeat(auto, minmax(35rem, 1fr));
-//     grid-gap: 2rem;
-//     justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
