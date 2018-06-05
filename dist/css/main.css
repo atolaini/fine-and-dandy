@@ -331,12 +331,12 @@ ul {
     right: 26%;
     margin-right: -30rem;
     top: 25rem; }
-    @media (max-width: 37.5em) {
-      .welcome__image {
-        left: -35rem; } }
     @media (max-width: 56.25em) {
       .welcome__image {
         left: -25rem; } }
+    @media (max-width: 37.5em) {
+      .welcome__image {
+        left: -30rem; } }
   .welcome__text {
     position: absolute;
     left: 50%;
@@ -623,6 +623,9 @@ ul {
     .footer__nav--link {
       margin-left: 2rem;
       color: rgba(251, 243, 243, 0.6); }
+      @media (max-width: 37.5em) {
+        .footer__nav--link {
+          margin-left: 1.2rem; } }
   .footer__copyright {
     color: rgba(251, 243, 243, 0.6);
     text-align: center;

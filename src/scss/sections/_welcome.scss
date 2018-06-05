@@ -20,12 +20,12 @@
         margin-right: -30rem;
         top: 25rem;
 
-        @include respond (phone) {
-            left: -35rem;
-        }
-
         @include respond (tab-port) {
             left: -25rem;
+        }
+
+        @include respond (phone) {
+            left: -30rem;
         }
     }
 
