@@ -28,8 +28,7 @@ body {
     letter-spacing: .7px;
     font-family: $primaryFont;
     color: $grey;
-    box-sizing: border-box;
-    text-size-adjust: 100%;
+    box-sizing: border-box;    
 }
 
 .container {
@@ -61,6 +60,10 @@ a:visited {
     width: 40rem;
     border: .5px solid $lightGrey;
     margin: auto;
+
+    @include respond (phone) {
+        width: 20rem;
+    }
 }
 
 ul {

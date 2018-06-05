@@ -6,6 +6,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @include respond (tab-port) {
+        background-attachment: none;
+        background-repeat: repeat;
+    }
+
+    @include respond (phone) {
+        background-image: none;
+        background-color: $brightPink;
+    }
     
     &__heading {
         padding-top: 10rem;
@@ -27,6 +37,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include respond (tab-port) {
+            height: auto;
+        }    
     
         &:not(last-child) {
             margin-left: 2rem;

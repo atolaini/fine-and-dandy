@@ -7,6 +7,14 @@
         justify-content: center;
         padding-top: 4rem;
 
+        @include respond (tab-port) {
+            font-size: 1.2rem;
+        }
+
+        @include respond (phone) {
+            font-size: 1rem;
+        }
+
         &--nav {
             display: flex;
         }
@@ -15,12 +23,6 @@
             margin-left: 2rem;
             color: transparentize($color: $white, $amount: 0.4);
         }
-
-        &--item:not(:last-child) {
-            border-right: 1px solid transparentize($color: $white, $amount: 0.4);
-            padding-right: 1.5rem;
-        }
-
     }
 
     &__copyright {

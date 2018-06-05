@@ -1,5 +1,5 @@
 .siteHeader {
-    height: 60rem;
+    height: 80vh;
     width: 100%;
     background-image: url('/dist/images/headerBg.png');
     background-repeat: no-repeat;
@@ -8,6 +8,15 @@
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+
+    @include respond (tab-land) {
+        background-attachment: none;
+        background-position: center;
+    }
+
+    @include respond (phone) {
+        background-position: right;
+    }
 
     &__logo {
         padding: 0 1rem;

@@ -1,20 +1,32 @@
 .welcome {
-    height: 60rem;
+    height: 56rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 1px -10px 40px transparentize($color: $black, $amount: .1);
+    //box-shadow: 1px -10px 40px transparentize($color: $black, $amount: .1);
     font-size: 1.6rem;
+
+    @include respond (phone) {
+        height: 65rem;  
+    }
 
     &__image {
         background-image: url('/dist/images/welcomeImg.svg');
         background-repeat: no-repeat;
         background-position: left 0;
-        height: 76rem;
-        width: 96rem;
+        height: 100%;
+        width: 100%;
         position: absolute;
-        right: 50%;
+        right: 26%;
         margin-right: -30rem;
         top: 25rem;
+
+        @include respond (phone) {
+            left: -35rem;
+        }
+
+        @include respond (tab-port) {
+            left: -25rem;
+        }
     }
 
 
@@ -43,8 +55,12 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
-    top: 116rem;
-    box-shadow: 10px 10px 25px -15px transparentize($color: $black, $amount: .1)
+    top: 113rem;
+    //box-shadow: 10px 10px 25px -15px transparentize($color: $black, $amount: .1);
+
+    @include respond (phone) {
+        top: 121rem;
+    }
 }
 
 .test {

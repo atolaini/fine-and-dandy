@@ -10,6 +10,11 @@
     display: flex;
     flex-flow: row-reverse;
     align-items: center;
+
+    @include respond (phone) {
+        width: 30rem;
+        font-size: 1rem;
+    }
     
 
     &:not(:last-child) {
@@ -40,6 +45,10 @@
         color: transparentize($color: $lightGrey, $amount: 0.3rem);
         font-family: sans-serif;
 
+        @include respond (phone) {
+            top: -10rem;
+            left: 6rem;
+        }
     }
 }
 
