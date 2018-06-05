@@ -314,7 +314,7 @@ ul {
   margin-top: 1.5rem; }
 
 .welcome {
-  height: 56rem;
+  height: 60rem;
   position: relative;
   overflow: hidden;
   font-size: 1.6rem; }
@@ -324,19 +324,18 @@ ul {
   .welcome__image {
     background-image: url("/dist/images/welcomeImg.svg");
     background-repeat: no-repeat;
-    background-position: left 0;
-    height: 100%;
-    width: 100%;
+    background-position: right 0;
+    height: 167%;
+    width: 50%;
     position: absolute;
-    right: 26%;
-    margin-right: -30rem;
+    left: -10rem;
     top: 25rem; }
     @media (max-width: 56.25em) {
       .welcome__image {
-        left: -25rem; } }
+        left: -9rem; } }
     @media (max-width: 37.5em) {
       .welcome__image {
-        left: -30rem; } }
+        left: -4rem; } }
   .welcome__text {
     position: absolute;
     left: 50%;

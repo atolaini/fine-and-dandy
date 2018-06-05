@@ -1,5 +1,5 @@
 .welcome {
-    height: 56rem;
+    height: 60rem;
     position: relative;
     overflow: hidden;
     //box-shadow: 1px -10px 40px transparentize($color: $black, $amount: .1);
@@ -12,20 +12,20 @@
     &__image {
         background-image: url('/dist/images/welcomeImg.svg');
         background-repeat: no-repeat;
-        background-position: left 0;
-        height: 100%;
-        width: 100%;
+        background-position: right 0;
+        height: 167%;
+        width: 50%;
         position: absolute;
-        right: 26%;
-        margin-right: -30rem;
+        left: -10rem;
         top: 25rem;
+        
 
         @include respond (tab-port) {
-            left: -25rem;
+            left: -9rem;
         }
 
         @include respond (phone) {
-            left: -30rem;
+            left: -4rem;
         }
     }
 
