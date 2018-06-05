@@ -1,0 +1,29 @@
+.contact {
+    height: 47rem;
+    background-color: $lightPink;
+    position: relative;
+    text-align: center;
+
+    &__heading {
+        padding-top: 5rem;
+    }
+
+    &__email {
+        padding-top: 3rem;
+        transform: scale(1);
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+
+        &--link:link,
+        &--link:active {
+            color: $red;
+        }
+    }
+}
