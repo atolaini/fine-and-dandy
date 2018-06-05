@@ -1,0 +1,44 @@
+.review {
+    background: transparentize($color: $red, $amount: 0.7);
+    padding: 3rem;
+    font-size: 1.4rem;
+    color: $white;
+    max-width: 72rem;
+    position: relative;
+    border: $grey 1px solid;
+    border-radius: .5rem;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 1;
+        padding-left: 2rem;
+    }
+
+    &__photo {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        border: $lightGrey 2px solid;
+        padding: 2px;
+    }
+
+    &::before {
+        content: "\201c";
+        position: absolute;
+        top: -13rem;
+        left: 14rem;
+        font-size: 30rem;
+        color: transparentize($color: $lightGrey, $amount: 0.3rem);
+        font-family: sans-serif;
+
+    }
+}

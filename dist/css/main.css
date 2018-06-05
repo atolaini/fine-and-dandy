@@ -118,6 +118,47 @@ a:visited {
     cursor: pointer;
     color: #979797; }
 
+.review {
+  background: rgba(165, 53, 49, 0.3);
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: #FBF3F3;
+  max-width: 72rem;
+  position: relative;
+  border: #4D4D4D 1px solid;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .review:not(:last-child) {
+    margin-right: 3rem; }
+  .review__text {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    padding-left: 2rem; }
+  .review__photo {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: #979797 2px solid;
+    padding: 2px; }
+  .review::before {
+    content: "\201c";
+    position: absolute;
+    top: -13rem;
+    left: 14rem;
+    font-size: 30rem;
+    color: rgba(151, 151, 151, 0.7);
+    font-family: sans-serif; }
+
 .siteHeader {
   height: 60rem;
   width: 100%;
@@ -376,3 +417,8 @@ a:visited {
     .information__delivery--heading {
       text-align: center;
       margin-bottom: 1rem; }
+
+.testimonials {
+  width: 100%;
+  height: 86.4rem;
+  background-image: url("/dist/images/testimonialBg.png"); }
