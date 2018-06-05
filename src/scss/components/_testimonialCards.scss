@@ -42,3 +42,17 @@
 
     }
 }
+
+.testimonials__cardsWrap {
+    background-color: coral;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    &--ul {
+        display: flex;
+        left: -100%;
+        position: relative;
+        transform: translateX(100%);
+    }
+}

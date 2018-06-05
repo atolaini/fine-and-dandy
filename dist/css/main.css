@@ -71,6 +71,9 @@ a:visited {
   border: 0.5px solid #979797;
   margin: auto; }
 
+ul {
+  list-style: none; }
+
 .galleryModal {
   background-color: rgba(59, 59, 59, 0.9);
   height: 100%;
@@ -158,6 +161,20 @@ a:visited {
     font-size: 30rem;
     color: rgba(151, 151, 151, 0.7);
     font-family: sans-serif; }
+
+.testimonials__cardsWrap {
+  background-color: coral;
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+  .testimonials__cardsWrap--ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -100%;
+    position: relative;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
 
 .siteHeader {
   height: 60rem;
