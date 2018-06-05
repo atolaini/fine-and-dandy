@@ -435,10 +435,11 @@ ul {
     margin-top: 5rem; }
 
 .contact {
-  height: 47rem;
+  height: 30rem;
   background-color: #E5CDB4;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 3rem; }
   .contact__heading {
     padding-top: 5rem; }
   .contact__email {
@@ -455,3 +456,32 @@ ul {
               transform: scale(1); }
     .contact__email--link:link, .contact__email--link:active {
       color: #A53531; }
+
+.footer {
+  background-color: #4D4D4D;
+  height: 40rem; }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 4rem; }
+    .footer__nav--nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .footer__nav--link {
+      margin-left: 2rem;
+      color: rgba(251, 243, 243, 0.6); }
+    .footer__nav--item:not(:last-child) {
+      border-right: 1px solid rgba(251, 243, 243, 0.6);
+      padding-right: 1.5rem; }
+  .footer__copyright {
+    color: rgba(251, 243, 243, 0.6);
+    text-align: center;
+    margin-top: 7rem; }
+  .footer__icons {
+    text-align: center;
+    margin-top: 7rem; }

@@ -1,0 +1,36 @@
+.footer {
+    background-color: $grey;
+    height: 40rem;;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+
+        &--nav {
+            display: flex;
+        }
+
+        &--link {
+            margin-left: 2rem;
+            color: transparentize($color: $white, $amount: 0.4);
+        }
+
+        &--item:not(:last-child) {
+            border-right: 1px solid transparentize($color: $white, $amount: 0.4);
+            padding-right: 1.5rem;
+        }
+
+    }
+
+    &__copyright {
+        color: transparentize($color: $white, $amount: 0.4);
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    &__icons {
+        text-align: center;
+        margin-top: 7rem;
+    }
+}
