@@ -85,7 +85,7 @@ ul {
   top: 0;
   left: 0;
   display: none;
-  z-index: 200; }
+  z-index: 2500; }
   .galleryModal__imgContainer {
     margin: auto;
     height: 60rem;
