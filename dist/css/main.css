@@ -40,7 +40,8 @@ body {
   font-family: "Open Sans";
   color: #4D4D4D;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size-adjust: 100%; }
 
 .container {
   width: 100%;
@@ -369,7 +370,7 @@ ul {
   background-color: #E5CDB4;
   padding-bottom: 90rem;
   position: relative; }
-  .gallery:before {
+  .gallery::before {
     content: '';
     width: 7rem;
     height: 7rem;
