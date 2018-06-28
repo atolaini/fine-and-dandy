@@ -1,63 +1,63 @@
 .gallery {
-    height: 80rem;
-    max-width: 100%;
-    background-color: $lightPink;
-    padding-bottom: 90rem;
-    position: relative;
+  height: auto;
+  max-width: 100%;
+  background-color: $lightPink;
+  padding-bottom: 9rem;
+  position: relative;
 
-    &::before {
-        content: '';
-        width: 7rem;
-        height: 7rem;
-        position: absolute;
-        left: 50%;
-        margin-left: -2.5rem;
-        background-color: white;
-        transform: rotate(45deg);
-        top: -4rem;
+  &::before {
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5rem;
+    background-color: white;
+    transform: rotate(45deg);
+    top: -4rem;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 96rem;
+    margin: auto;
+  }
+
+  &__heading {
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  &__divider {
+    margin-top: 1.5rem;
+    margin: auto;
+  }
+
+  &__grid {
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(6, 20vh);
+    grid-gap: 2rem;
+    padding: 2rem;
+    margin: 7rem auto;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
     }
+  }
 
-    &__container {
-        width: 100%;
-        max-width: 96rem;
-        margin: auto;
-    }
-
-    &__heading {
-        padding-top: 10rem;
-        text-align: center;
-    }
-
-    &__divider {
-        margin-top: 1.5rem;
-        margin: auto;
-    }
-
-    &__grid {
-        grid-column: full-start / full-end;
-        display: grid;
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(3, 20vh);
-        grid-gap: 2rem;
-        padding: 2rem;
-        margin: 7rem auto;
-        justify-content: center;
-    }
-
-    &__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        transform: scale(1);
-        transition: .3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.1);
-        } 
-    }
-
-    &__item {
-        overflow: hidden;
-    }
+  &__item {
+    overflow: hidden;
+  }
 }

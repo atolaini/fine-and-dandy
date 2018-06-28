@@ -365,13 +365,13 @@ ul {
   background-color: cadetblue; }
 
 .gallery {
-  height: 80rem;
+  height: auto;
   max-width: 100%;
   background-color: #E5CDB4;
-  padding-bottom: 90rem;
+  padding-bottom: 9rem;
   position: relative; }
   .gallery::before {
-    content: '';
+    content: "";
     width: 7rem;
     height: 7rem;
     position: absolute;
@@ -395,7 +395,7 @@ ul {
     grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(3, 20vh);
+    grid-template-rows: repeat(6, 20vh);
     grid-gap: 2rem;
     padding: 2rem;
     margin: 7rem auto;
@@ -410,8 +410,8 @@ ul {
     display: block;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out; }
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
     .gallery__img:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
