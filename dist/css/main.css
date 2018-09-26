@@ -292,7 +292,7 @@ ul {
   .siteHeader__contactInfo {
     background-color: #3B3B3B;
     height: 5rem;
-    opacity: .6; }
+    opacity: 0.6; }
     .siteHeader__contactInfo--contents {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -307,7 +307,8 @@ ul {
     .siteHeader__contactInfo--email:link, .siteHeader__contactInfo--emai:visited {
       color: #FBF3F3; }
 
-.facebookIcon, .instagramIcon {
+.facebookIcon,
+.instagramIcon {
   fill: #FBF3F3;
   width: 2rem;
   height: 2rem;
@@ -385,6 +386,8 @@ ul {
     width: 100%;
     max-width: 96rem;
     margin: auto; }
+    .gallery__container:hover {
+      cursor: pointer; }
   .gallery__heading {
     padding-top: 10rem;
     text-align: center; }
@@ -395,10 +398,10 @@ ul {
     grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(6, 20vh);
+    grid-template-rows: repeat(8, 20vh);
     grid-gap: 2rem;
     padding: 2rem;
-    margin: 7rem auto;
+    margin: 5rem auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -595,8 +598,8 @@ ul {
     padding-top: 3rem;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     .contact__email:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }

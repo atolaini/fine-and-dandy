@@ -21,6 +21,10 @@
     width: 100%;
     max-width: 96rem;
     margin: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__heading {
@@ -37,10 +41,10 @@
     grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(6, 20vh);
+    grid-template-rows: repeat(8, 20vh);
     grid-gap: 2rem;
     padding: 2rem;
-    margin: 7rem auto;
+    margin: 5rem auto;
     justify-content: center;
   }
 

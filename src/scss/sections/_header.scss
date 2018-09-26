@@ -1,63 +1,63 @@
 .siteHeader {
-    height: 80vh;
-    width: 100%;
-    background-image: url('/dist/images/headerBg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  background-image: url("/dist/images/headerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 
-    @include respond (tab-land) {
-        background-attachment: none;
-        background-position: center;
+  @include respond(tab-land) {
+    background-attachment: none;
+    background-position: center;
+  }
+
+  @include respond(phone) {
+    background-position: right;
+  }
+
+  &__logo {
+    padding: 0 1rem;
+    margin-top: 5rem;
+
+    &--img {
+      color: transparent;
+      height: 38.4rem;
+      max-width: 100%;
+      background-image: url("/dist/images/logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      text-align: center;
+    }
+  }
+
+  &__contactInfo {
+    background-color: $black;
+    height: 5rem;
+    opacity: 0.6;
+
+    &--contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5rem;
     }
 
-    @include respond (phone) {
-        background-position: right;
+    &--email:link,
+    &--emai:visited {
+      color: $white;
     }
-
-    &__logo {
-        padding: 0 1rem;
-        margin-top: 5rem;
-
-        
-        &--img {
-            color: transparent;
-            height: 38.4rem;
-            max-width: 100%;
-            background-image: url('/dist/images/logo.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            text-align: center;
-        }
-    }
-
-    &__contactInfo {
-        background-color: $black;
-        height: 5rem;
-        opacity: .6;
-
-        &--contents {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 5rem;
-        }
-
-        &--email:link,
-        &--emai:visited {
-            color: $white;
-        }
-    }
+  }
 }
 
-.facebookIcon, .instagramIcon {
-    fill: $white;
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
+.facebookIcon,
+.instagramIcon {
+  fill: $white;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
 }
